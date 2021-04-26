@@ -52,8 +52,8 @@ RUN apt-get -y --force-yes update && apt-get -y --force-yes install \
                         php-intl \
                         php-openssl \
                         php-soap \
-                        php-xsl \
-                        
+                        php-xsl
+
 
 RUN a2dismod mpm_event
 RUN a2enmod mpm_prefork \
