@@ -76,8 +76,6 @@ RUN mkdir -p $APACHE_RUN_DIR $APACHE_LOCK_DIR $APACHE_LOG_DIR
 EXPOSE 80
 
 # Copy repo dari www ke folder html container chown directory
-ADD www /var/www/html
-
 # Set user dan group
 RUN usermod -u 1000 www-data
 ADD apache-config.conf /etc/apache2/sites-enabled/000-default.conf
