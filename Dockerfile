@@ -23,7 +23,7 @@ RUN apt-get -y --force-yes update && apt-get -y --force-yes install \
 					 	apache2 \
 					 	apache2-doc \
 					 	apache2-utils \
-						php8.0 \
+						php7.3 \
 						php-xml \
 						php-cli \
 						php-dev \
@@ -45,15 +45,9 @@ RUN apt-get -y --force-yes update && apt-get -y --force-yes install \
 						php-pear \
 						php-zip \
                         php-bcmath \
-                        php-ctype \
-                        php-dom \
-                        php-hash \
-                        php-iconv \
                         php-intl \
                         php-openssl \
-                        php-soap \
-                        php-xsl
-
+                        php-soap 
 
 RUN a2dismod mpm_event
 RUN a2enmod mpm_prefork \
