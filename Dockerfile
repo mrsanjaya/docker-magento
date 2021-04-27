@@ -46,7 +46,7 @@ RUN apt-get -y --force-yes update && apt-get -y --force-yes install \
 						php-zip \
                         php-bcmath \
                         php-intl \
-                        php-openssl \
+                        openssl \
                         php-soap 
 
 RUN a2dismod mpm_event
