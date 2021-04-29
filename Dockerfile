@@ -42,7 +42,6 @@ RUN apt-get -y --force-yes update && apt-get -y --force-yes install \
 						git \
 						unzip \
 						libapache2-mod-php \
-						php7.3-pear \
 						php7.3-zip \
                         php7.3-bcmath \
                         php7.3-intl \
