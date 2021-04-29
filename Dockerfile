@@ -80,5 +80,6 @@ EXPOSE 80
 RUN usermod -u 1000 www-data
 ADD apache-config.conf /etc/apache2/sites-enabled/000-default.conf
 
+RUN php -v
 #Jalankan apache
 CMD /usr/sbin/apache2ctl -D FOREGROUND
